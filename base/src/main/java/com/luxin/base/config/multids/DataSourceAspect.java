@@ -14,7 +14,7 @@ import java.lang.reflect.Method;
 @Aspect
 public class DataSourceAspect {
 
-    @Pointcut("execution(public * com.luxin.order.service.IMultiService.*(..))")
+    @Pointcut("execution(public * com.luxin.base.service.IMultiService.*(..))")
     public void checkPoint(){}
 
     @Before("checkPoint()")
